@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  saldo: number = 0
+  saldo: number = 1000
+  mostrarComponente: boolean = true
 
   alterarSaldo(valor: number) {
     this.saldo += valor
+  }
+
+  toggleMostrarComponente(): void {
+    this.mostrarComponente = !this.mostrarComponente
   }
 }
